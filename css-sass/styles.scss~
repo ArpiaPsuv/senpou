@@ -1,0 +1,10 @@
+@import "senpou/core";
+@import "senpou/senmix";
+
+.comtainer{
+  @include make-grid-columns();
+}
+
+.row{
+  @include make-row();
+}

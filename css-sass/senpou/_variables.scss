@@ -1,0 +1,32 @@
+//colors
+
+$blankColor: #fff;
+
+//  Colors
+//-----------------------------
+$whiteOff:			#fefefe;
+$greyLight:	 		#ddd;
+$greyLightExtra: 	#fafafa;
+$greyMedium:		#777;
+$greyMediumLight:	#aaa;
+$greyDark:			#333;
+$greyMediumDark: 	#555;
+$linkBlue: 			#0654ba;
+$blueLight:			#0077d2;
+$redError:			#dd1e31;
+
+//fonts
+$arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
+// DEFAULTS
+
+$Basefont:$arial;
+$line-height-base:        1.428571429 !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-size-base: 20px;
+$font-color-base: rgb(69, 72, 80);
+//** By default, this inherits from the `<body>`
+

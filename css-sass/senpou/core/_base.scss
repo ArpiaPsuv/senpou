@@ -1,0 +1,375 @@
+/*** RESETS ***/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/***** ADDING TYPOGRAPHY & BACKGROUND TEXTURE WITH BODY REST *****/
+html body{
+  line-height: 1;/*reset*/
+  font-size: 14px;/*typography*/
+  color: #333;/*typography*/
+  font-family: "Helvetica neue", Helvetica, Arial, Sans-serif;/*typography*/
+  background: #FAFAFA /*need to create background texture fixme*/
+}
+
+rticle,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section{
+  display: block;
+}
+
+caption{
+  text-align: left;
+  font-weight: normal;
+  float: none !important;
+}
+
+blockquote, q{
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after{
+  content: '';
+  content: none;
+}
+
+blockquote{
+  margin: 1.5em;
+  color: #555;
+  font-style: italic;
+  font-family: serif;
+}
+
+ins{
+  color: #000;
+  background-color: #ff9;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark{
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del{
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title]{
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select{
+  vertical-align: middle;
+}
+
+a img{
+  border: 0 none;
+}
+
+b, strong{
+  font-weight: bold;
+}
+
+/***** END RESETS *****/
+
+
+
+/*** Hyperlinks ***/
+
+a{
+  color: #0654ba;
+  text-decoration: none;
+}
+
+a:visited, a.scnd:visited{
+  color: #6a29b9;
+  text-decoration: none;
+}
+
+a.undl{/* for underlined links and links used in paragraphs, replaced .text-block */
+  text-decoration: underline;
+}
+
+a.scnd{/* secondary links, replaced .secondary */
+  color: #555;
+}
+
+a.thrd, a.thrd:visited{
+  color: #777;
+}
+
+a:focus, a:hover {
+  color: #0654ba;
+  text-decoration: underline;
+}
+
+a.thrd:hover{
+  color: #777;
+  text-decoration: underline;
+}
+
+a.scnd:hover{
+  color: #555;
+  text-decoration: underline;
+}
+
+
+/*** End Hyperlinks ***/
+
+/***** GLOBAL SPRITE *****/
+/***** fixme *****/
+/***** end GLOBAL SPRITE *****/
+
+h1{
+  font-size: 2em; /* 28px */
+  line-height: 1.95em;
+  margin-bottom: 0.5em;
+}
+
+/* MINIMAL HEADER PAGE TITLE */
+
+.small-t{ //replaced hp-left smalpagetitle
+  position: absolute;
+  top: 38px;
+  margin-left: 135px;
+  font-size: 2.571em; /* 36px */
+}
+
+h2{
+  font-size: 1.714em; /* 24px */
+}
+
+h3{
+  font-size: 1.429em; /* 20px */
+  font-weight: 500;
+}
+
+h4{
+  font-size: 1.143em; /* 16px */
+  font-weight: 600;
+}
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img{
+  margin: 0;
+}
+
+.fontsm{/* global font small minus/xs (replaced .font-xsmall now replace -> fgsm to .fontsm) */
+  font-family: verdana, arial, sans-serif;
+  font-size: .76em;
+  line-height: 1.875em;
+}
+
+.globalfs{/* global font small (replaced .font-smallminus  now replaced ->globalfs*/
+  font-size: .92em;
+  line-height: 1.875em;
+}
+
+.gfsp{/* global font small plus (replaced .font-smallplus) */
+  font-size: 1.077em;
+  line-height: 2em;
+}
+
+.globalfm{/* global font medium (replaced .font-medium -> .globalfm) */
+  font-size: 1.231em;
+  line-height: 2.5em;
+}
+
+.hltd{/* highlight text (replaced .highlight) */
+  background-color: #ff0;
+}
+
+.clr:after{ //  i trink clearfix for  fonts awesome fixme
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.clr{
+  display: block;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+input, button, select, textarea{
+  font-family:inherit;
+}
+
+/*** END TYPOGRAPHY ***/
+/***** GRID *****/
+
+.rail-w{/* replaced hp-rail */
+  position: relative;
+  float: left;
+  width: 760px;
+}
+.sz1200 .rail-w{
+  width: 980px;
+}
+.rail-m{/* replaced hp_main */
+  position: relative;
+  float: left;
+  overflow: hidden;
+  left: 780px;
+  width: 760px;
+}
+.sz1200 .rail-m{
+  left: 1000px;
+  width: 980px;
+}
+.rail-l{/* replaced hp-left */
+  position: relative;
+  float: left;
+  width: 210px;
+  z-index: 1;
+  padding: 0 0 20px;
+}
+
+/***** END GRID *****/
+
+/***** UI ELEMENTS *****/
+
+/*** Container (not for images) ***/
+.containerstd, .c-std-bb{/* replaced c-std to .containerstd */
+  /*margin-top: 10px;*/
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 4px 4px 1px #eee;
+  padding: 17px 20px 9px;
+  margin-bottom: 20px;
+}
+
+.c-std-bb{
+  padding: 0px;
+}
+
+.c-std-bb img {
+  border-radius: 3px;
+}
+
+.containerstd p{
+  margin: 0 0 10px;
+}
+/*** Faded horizontal rule ***/
+
+.fdhr{/* replaced .faded-rule */
+  margin: 10px 0;
+  /*float: left;*/
+  height: 1px;
+  border: none;
+  background: #ddd;
+  width: 98%;
+  background: rgb(200,200,200); /* Old browsers */
+
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: -moz-linear-gradient(left, rgba(200,200,200,.1) 0%, rgba(120,120,120,.5) 30%, rgba(120,120,120,.5) 65%, rgba(200,200,200,.1) 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(200,200,200,.1)), color-stop(45%,rgba(120,120,120,.5)), color-stop(55%,rgba(120,120,120,.5)), color-stop(99%,rgba(200,200,200,.1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(200,200,200,.1) 0%,rgba(120,120,120,.5) 45%,rgba(120,120,120,.5) 55%,rgba(200,200,200,.1) 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(200,200,200,.1) 0%,rgba(120,120,120,.5) 45%,rgba(120,120,120,.5) 55%,rgba(200,200,200,.1) 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(200,200,200,.1) 0%,rgba(120,120,120,.5) 45%,rgba(120,120,120,.5) 55%,rgba(200,200,200,.1) 99%); /* IE10+ */
+  background: linear-gradient(left, rgba(200,200,200,.1) 0%,rgba(120,120,120,.5) 45%,rgba(120,120,120,.5) 55%,rgba(200,200,200,.1) 99%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=1 ); /* IE6-8 */
+}
+/* End Faded horizontal role */
+.c-t{/* container title */
+  font-size: 1.429em; /* 20px */
+  font-weight: 500;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+/* Lifted corner shadow */
+.l-shad{
+  position: relative;
+  float: left;
+  /*width: 120px;test - 40%*/
+  /*height: 120px;test - no height*/
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.l-shad:hover {
+  border: 1px solid #aaa;
+  cursor: pointer;
+  color: #0072ad;
+}
+.l-shad:before{
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
+
+.lftd{/* replaced .lifted */
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /*margin-bottom: 16px;*/
+}
+
+.lftd:before{
+  bottom: 15px;
+  left: 5px;
+  width: 40%;
+  height: 10%;
+  -webkit-box-shadow: 0 15px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+
+/* END Lifted corner shadow */

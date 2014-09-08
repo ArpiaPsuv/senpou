@@ -1,0 +1,100 @@
+.Globaltop{
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-shadow: 1px 3px 4px 0 rgba(0, 0, 0, 0.15);
+  z-index: -1;
+
+
+}
+.tocnt{
+  width: 980px;
+  margin:  0;
+  z-index: 1;
+  position: relative;
+  left: 25%;
+  height: 30px;
+  z-index: 10;
+
+}
+.tocnt ul {
+  list-style: none;
+}
+
+#top-right a, .top-left a {
+  color: #333;
+  cursor: pointer;
+}
+
+.top-right{
+  position: absolute;
+  right: 0;
+  top: 3px;
+
+}
+
+li.top-right-li {
+  background: url("http://localhost:8080/img/spriter.png") no-repeat scroll -4px -57px  rgba(0, 0, 0, 0);
+  height:39px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 9px 0 14px;
+line-height: 20px;
+
+
+
+
+}
+li.top-right-li:first-child {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  background: none; }
+
+.top-right ul{
+  list-style: none;
+  position: relative;
+}
+
+.top-left{
+  position: absolute;
+  left: 0;
+  top: 1px;
+  z-index: 99999;
+}
+
+.top-left li{
+  display: inline-block;
+}
+
+.tabs{
+  width: 5em;
+  line-height: 29px;
+  text-align: center;
+  position: relative;
+
+
+
+}
+
+
+#menu {
+  background:   #fff;
+  border: 1px solid #ddd;
+ display: inline-block;
+
+}
+div#menu{
+
+}
+#menu:hover{
+
+}
+
+.tabs #menu ul#menubar .dropdown-menu {
+  top: 25px;
+}
