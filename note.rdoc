@@ -1,0 +1,23 @@
+Gemfile
+------------
+Gemfile se evalúa como código Ruby ,describe las dependencias
+de gems requeridas para ejecutar código asociado a Ruby .
+
+package.json
+-------------
+El archivo package.json pertenece en el directorio raíz del proyecto
+junto al Gruntfile, y debe estar comprometido con la fuente de su proyecto.
+La ejecucion de +npm install+  en la misma carpeta que se encuentra +package.json+
+instalara todas versión correcta de cada dependencia mencionada en dicho anexo
+
+The Gruntfile
+--------------
+El archivo Gruntfile.js o Gruntfile.coffee es un archivo JavaScript o CoffeeScript válido
+que pertenece al directorio de raiz del proyecto junto con el archivo package.json y debe estar
+comprometido con la fuente de su proyecto
+
+El archivo +grunt+  se compone de las siguientes partes:
+- La función "envoltura"
+- Configuración de proyectos y tareas
+- Cargar plugins y tareas Grunt
+- tareas personalizados

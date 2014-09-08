@@ -1,0 +1,10 @@
+permalink: /blog/:title
+exclude: [css-sass,
+          node_modules,
+          notes,components,
+          Carpeta sin título,
+          Gruntfile.js,
+          package.json,
+          note, note.rdoc]
+
+

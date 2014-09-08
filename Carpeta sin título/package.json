@@ -1,0 +1,39 @@
+{
+  "name": "senpou",
+  "description": "mmmm",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cleopatra/senpou",
+  "author": {
+    "name": "Selene",
+    "url": "Destructor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cleopatra/senpou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cleopatra/senpou/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/cleopatra/senpou/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-autoprefixer": "~0.2.20130806",
+    "grunt-contrib-sass": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+     "grunt-contrib-compass": "~0.9.1",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-open": "~0.2.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-jekyll": "~0.3.9"
+  }
+}
